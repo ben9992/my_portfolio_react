@@ -12,8 +12,8 @@ function Intro() {
 				<Row>
 					<Col md={8} className="home-about-description">
 						<h1 style={{ fontSize: "2.6em" }}>
-							LET ME <span class="text-container">
-								<div class="text" data-text="INTRODUCE">INTRODUCE</div>
+							LET ME <span className="text-container">
+								<div className="text" data-text="INTRODUCE">INTRODUCE</div>
 							</span> MYSELF
 						</h1>
 						<p className="home-about-body">
@@ -25,7 +25,7 @@ function Intro() {
 							<br />
 							<br />I am fluent in classics like
 							<i>
-								<b className="lightblue"> C++,DotNet & Javascript. </b>
+								<b className="lightblue"> C++, JS & .Net </b>
 							</i>
 							<br />
 							<br />

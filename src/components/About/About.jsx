@@ -19,8 +19,8 @@ function About() {
 						}}
 					>
 						<h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-							Welcome To My <span class="text-container">
-								<div class="text" data-text="world">world</div>
+							Welcome To My <span className="text-container">
+								<div className="text" data-text="world">world</div>
 							</span>
 						</h1>
 
