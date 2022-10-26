@@ -5,10 +5,10 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import {
 	AiOutlineHome,
-	AiOutlineFundProjectionScreen,
 	AiOutlineUser,
 } from "react-icons/ai";
 import { BsBook } from "react-icons/bs";
+import { FaBrain } from "react-icons/fa";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -68,7 +68,17 @@ function NavBar() {
 								to="/skills"
 								onClick={() => updateExpanded(false)}
 							>
-								<BsBook style={{ marginBottom: "2px" }} /> Skills
+								<FaBrain style={{ marginBottom: "2px" }} /> Skills
+							</Nav.Link>
+						</Nav.Item>
+
+						<Nav.Item>
+							<Nav.Link
+								as={Link}
+								to="/courses"
+								onClick={() => updateExpanded(false)}
+							>
+								<BsBook style={{ marginBottom: "2px" }} /> Courses
 							</Nav.Link>
 						</Nav.Item>
 

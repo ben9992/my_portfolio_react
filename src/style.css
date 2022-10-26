@@ -12,6 +12,12 @@ html {
     rgba(19, 0, 124, 0.692)
   );
 
+  --image-gradient-card: linear-gradient(
+    to bottom,
+    rgba(0, 12, 177, 0.603),
+    rgba(0, 0, 0, 0.61)
+  );
+
   --imp-text-color: #000153;
 }
 
@@ -454,6 +460,86 @@ button:focus {
 }
 
 /* --------- */
+/* Courses */
+/* --------- */
+
+.courses-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.courses-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.courses-card-view {
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 0.71) 0s !important;
+  height: 100% !important;
+  scale: 0.9 0.9 !important;
+  box-shadow: 5px 10px 8px rgba(23, 20, 206, 0.65) !important;
+  border-width: 0ch !important;
+}
+
+.courses-card-body-text {
+  color: #00015300;
+}
+
+.courses-card-view:hover .courses-card-body-text {  
+  color: white;
+}
+
+.courses-card-view:hover {
+  color: white;
+  scale: 1 1 !important;
+  background: var(--image-gradient-card);
+}
+
+.card-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+}
+
+.blog-img {
+  padding: 0px !important;
+  opacity: 0.8 !important;
+  border-radius: 0px !important;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #0300bd00 !important;
+  border-color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #0300bd !important;
+  border-color: #0f3a97 !important;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.courses-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+}
+
+.coursesCard{
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
+/* --------- */
 /* About */
 /* --------- */
 
@@ -463,24 +549,6 @@ button:focus {
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
-}
-
-.arrow-bounce {
-  animation: bounce 2s infinite;
-  position: absolute;
-  font-size: xx-large
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-40px);
-  }
-  60% {
-    transform: translateY(-20px);
-  }
 }
 
 .tech-icons {
@@ -525,6 +593,48 @@ button:focus {
   list-style: none !important;
   text-align: left !important;
   padding-left: 1px !important;
+  font-size: medium;
+}
+
+.text-container
+{
+  position: relative;
+  display: inline-block;
+  padding: 0 3px;
+  cursor: pointer;
+}
+
+.text
+{
+  font-weight: 900;
+  position: relative;
+  color: var(--imp-text-color); 
+}
+
+.text::before
+{
+  content: attr(data-text);
+  position: absolute;
+  color: #fff;
+  width: 0;
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+.text-container::before
+{
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #2980b9;
+  right: 0;
+  top: 0;
+  transition: 0.6s;
+}
+
+.text-container:hover .text::before,.text-container:hover::before
+{
+  width: 100%;
 }
 
 @media (max-width: 767px) {

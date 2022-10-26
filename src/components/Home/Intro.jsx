@@ -12,7 +12,9 @@ function Intro() {
 				<Row>
 					<Col md={8} className="home-about-description">
 						<h1 style={{ fontSize: "2.6em" }}>
-							LET ME <span className="lightblue"> INTRODUCE </span> MYSELF
+							LET ME <span class="text-container">
+								<div class="text" data-text="INTRODUCE">INTRODUCE</div>
+							</span> MYSELF
 						</h1>
 						<p className="home-about-body">
 							Computers, and specific programming has always been my passion
