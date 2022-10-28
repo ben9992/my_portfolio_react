@@ -26,7 +26,7 @@ html {
 }
 
 .lightblue {
-  color: #4164ff !important;
+  color: #00c4ff !important;
 }
 
 button:focus {
@@ -165,11 +165,6 @@ button:focus {
   color: rgb(250, 250, 250) !important;
 }
 
-.logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
-}
-
 .navbar-nav .nav-link {
   transform: scale(1.1, 1.1);
   color: white !important;
@@ -231,7 +226,7 @@ button:focus {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.2s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 20% 20%; /* Pivot around the bottom-left palm */
+  transform-origin: 20% 20%;
   display: inline-block;
 }
 
@@ -241,7 +236,7 @@ button:focus {
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
   20% {
     transform: rotate(-8deg);
   }
@@ -261,6 +256,7 @@ button:focus {
     transform: rotate(0deg);
   }
 }
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -325,16 +321,20 @@ button:focus {
   }
 }
 
-.myAvtar {
+.avatarImg {
   justify-content: center !important;
   padding-top: 9em !important;
 }
 
 @media (max-width: 767px) {
-  .myAvtar {
+  .avatarImg {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
   }
+}
+
+.glowText {
+  text-shadow: 9px 5px 20px #06007a, 19px 8px 20px #06007a;
 }
 
 .home-about-section {
@@ -423,13 +423,10 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: rgb(1, 0, 78);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
-}
-.footer-copywright {
-  text-align: center !important;
 }
 
 .footer-body {
@@ -438,10 +435,6 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center !important;
-  }
-
   .footer-body {
     text-align: center !important;
   }
@@ -506,23 +499,6 @@ button:focus {
   border-radius: 10px !important;
 }
 
-.blog-img {
-  padding: 0px !important;
-  opacity: 0.8 !important;
-  border-radius: 0px !important;
-}
-
-.btn-primary {
-  color: #fff !important;
-  background-color: #0300bd00 !important;
-  border-color: #ffffff !important;
-}
-
-.btn-primary:hover {
-  color: #fff !important;
-  background-color: #0300bd !important;
-  border-color: #0f3a97 !important;
-}
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -537,7 +513,6 @@ button:focus {
 .coursesCard{
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
 
 /* --------- */
 /* About */
@@ -584,17 +559,11 @@ button:focus {
   line-height: 1.6 !important;
 }
 
-.quote-card-view {
-  border: none !important;
-  color: white !important;
-  background-color: transparent !important;
-}
-
 .about-activity {
   list-style: none !important;
   text-align: left !important;
   padding-left: 1px !important;
-  font-size: large;
+  font-size: x-large;
 }
 
 .text-container
@@ -609,7 +578,8 @@ button:focus {
 {
   font-weight: 900;
   position: relative;
-  color: #2980b9
+  color: #4fa1ff;
+  font-size: xxx-large;
 }
 
 .text::before
@@ -733,61 +703,4 @@ button:focus {
   top: 0;
   background: #fff;
   border: 2px solid #110797;
-}
-
-.like-item {
-  padding-top: 10px !important;
-  font-size: 1.1em !important;
-  font-family: sans-serif !important;
-}
-
-.like-btn {
-  background-color: #110797 !important;
-  border-color: #110797 !important;
-  padding: 0.25rem 0.98rem !important;
-  border-radius: 5px !important;
-  line-height: 1.4 !important;
-  transition: 0.3s ease !important;
-}
-
-.like-btn:hover {
-  transform: translateY(-2px) !important;
-  background-color: #2f23da !important;
-  border-color: #2f23da !important;
-}
-
-.animate-like {
-  animation-name: likeAnimation;
-  animation-fill-mode: forwards;
-  animation-duration: 0.85s;
-}
-@keyframes likeAnimation {
-  0% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.fork-btn {
-  font-size: 1.1em !important;
-  padding-top: 10px !important;
-}
-
-.fork-btn-inner {
-  line-height: 1.4em !important;
-  background-color: #934cce5e !important;
-  padding: 0.25rem 1.1rem !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-}
-
-.fork-btn-inner:hover {
-  transform: translateY(-2px) !important;
-  background-color: #2f23da !important;
-  border-color: #2f23da !important;
-}
-.fork-btn-inner::after {
-  display: none !important;
 }

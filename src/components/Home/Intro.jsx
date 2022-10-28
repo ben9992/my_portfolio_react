@@ -17,15 +17,26 @@ function Intro() {
 							</span> MYSELF
 						</h1>
 						<p className="home-about-body">
-							Computers, and specific programming has always been my passion
-							from a young age 👶
+							Computers has always been my passion from a young age 👶
 							<br />
-							Since then, I'm studing and research new technologies{" "}
-							<b className="lightblue"> every single day </b> 🕵️
 							<br />
-							<br />I am fluent in classics like
+							I remember the first time like it was yesterday, with a glass of wine on the balcony and the first mission of "Hello World" in C++.
+							<br />
+							It’s like you sit down at 8, and suddenly you notice that your neck hurts, and your eyes are sore 😳, and you blink and stretch, and look at the time 🕙, and it’s 12:30.
+							<br />
+							Where did the time go? 🤔
+							<br />
+							And you’ve coded a whole class with test cases and it works better than you imagined it. 🤩
+							<br />
+							You feel like you really created something out of thin air, crystallized knowledge into executable form using the awesome power of your mind alone.
+							<br />
+							<br />
+							Since that day I continue to learn and explore{" "}
+							<b className="lightblue"> every day anew </b> 🕵️
+							<br />
+							<br />My main languages are
 							<i>
-								<b className="lightblue"> C++, JS & .Net </b>
+								<b className="lightblue"> C++, .Net & Javascript </b>
 							</i>
 							<br />
 							<br />
@@ -33,7 +44,7 @@ function Intro() {
 							<i>
 								<b className="lightblue">Web & Native Technologies </b> and also
 								in areas related to{" "}
-								<b className="lightblue">Video Processing OverIP.</b>
+								<b className="lightblue">Software architecture</b> and <b className="lightblue">Video Processing OverIP.</b>
 							</i>
 							<br />
 							<br />
@@ -47,7 +58,7 @@ function Intro() {
 							</i>
 						</p>
 					</Col>
-					<Col md={4} className="myAvtar">
+					<Col md={4} className="avatarImg">
 						<Tilt>
 							<img src={myImg} className="img-fluid" alt="avatar" />
 						</Tilt>
@@ -56,9 +67,6 @@ function Intro() {
 				<Row>
 					<Col md={12} className="home-about-social">
 						<h1>FIND ME ON</h1>
-						<p>
-							Feel free to <span className="lightblue">connect </span> me
-						</p>
 						<ul className="home-about-social-links">
 							<li className="social-icons">
 								<a

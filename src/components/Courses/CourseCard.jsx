@@ -7,7 +7,7 @@ function CourseCard(props) {
 	<Card className="text-center courses-card-view">
 		<Card.Body>
 			<Card.Img style={{maxHeight: "70%", maxWidth: "70%", padding: "20px"}} src={props.img}></Card.Img>
-			<Card.Title><strong className="purple">{props.title}</strong></Card.Title>
+			<Card.Title><strong>{props.title}</strong></Card.Title>
 			<Card.Body>
 				<Card.Text className="courses-card-body-text">
 					{props.description}

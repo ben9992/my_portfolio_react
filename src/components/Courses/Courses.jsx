@@ -10,7 +10,7 @@ function Courses() {
 		<Particle />
 		<Container>
 		  <h1 className="courses-heading">
-			My Recent <strong className="purple">Courses </strong>
+			My Recent <strong>Courses </strong>
 		  </h1>
 		  <br/>
 		  <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>

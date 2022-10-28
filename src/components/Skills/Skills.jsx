@@ -13,6 +13,11 @@ function Skills() {
 		<Container fluid className="about-section">
 			<Particle />
 			<Container>
+				<h1 className="courses-heading">
+					My <strong>Skills</strong>
+				</h1>
+				<br/>
+				<br/>
 				<Webstack />
 				<Nativestack />
 				<Databasesstack />

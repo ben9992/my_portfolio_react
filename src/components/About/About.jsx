@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Aboutcard from "./AboutCard";
+import Transition from "./Transition";
 import meImg from "../../assets/me.jpg";
 
 function About() {
@@ -19,9 +19,7 @@ function About() {
 						}}
 					>
 						<h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-							Welcome To My <span className="text-container">
-								<div className="text" data-text="world">world</div>
-							</span>
+							Welcome To My <strong>World</strong>
 						</h1>
 
 						<p style={{ textAlign: "left", fontSize: "1.5em" }}>
@@ -48,7 +46,23 @@ function About() {
 						<img style={{ padding: "30px", borderRadius: "50%" }} src={meImg} alt="about" className="img-fluid" />
 					</Col>
 				</Row>
-				<Aboutcard />
+				<Row style={{ justifyContent: "center", padding: "10px" }}>
+					<Col
+						md={7}
+						style={{
+							justifyContent: "center",
+							paddingTop: "30px",
+							paddingBottom: "50px",
+						}}
+					>
+						<div>
+							<Transition/>
+						</div>
+						<p style={{ textAlign: "left", fontSize: "1.5em", paddingTop:"4em" }}>
+						🧠 Albert Einstein
+						</p>
+					</Col>
+				</Row>
 			</Container>
 		</Container>
 	);
