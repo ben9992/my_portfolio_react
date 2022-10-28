@@ -20,13 +20,13 @@ function Intro() {
 							Computers has always been my passion from a young age 👶
 							<br />
 							<br />
-							I remember the first time like it was yesterday, with a glass of wine on the balcony and the first mission of "Hello World" in C++.
+							I remember the first time as it was yesterday, with a glass of wine on the balcony and the first task of "Hello World" in C++.
 							<br />
-							It’s like you sit down at 8, and suddenly you notice that your neck hurts, and your eyes are sore 😳, and you blink and stretch, and look at the time 🕙, and it’s 12:30.
+							It’s like you sit down at 8 PM, suddenly you notice that your neck hurts, your eyes are sore 😳, you blink and stretch, look at the time 🕙, and it’s 12:30 AM.
 							<br />
 							Where did the time go? 🤔
 							<br />
-							And you’ve coded a whole class with test cases and it works better than you imagined it. 🤩
+							You’ve coded a whole class with test cases and it works better than you imagined it. 🤩
 							<br />
 							You feel like you really created something out of thin air, crystallized knowledge into executable form using the awesome power of your mind alone.
 							<br />
@@ -48,7 +48,7 @@ function Intro() {
 							</i>
 							<br />
 							<br />
-							In my free time, I also apply my passion for developing products
+							I also apply my passion for developing products
 							with new things like
 							<i>
 								<b className="lightblue">
@@ -59,7 +59,7 @@ function Intro() {
 						</p>
 					</Col>
 					<Col md={4} className="avatarImg">
-						<Tilt>
+						<Tilt glareEnable={true} gyroscope={true}>
 							<img src={myImg} className="img-fluid" alt="avatar" />
 						</Tilt>
 					</Col>
