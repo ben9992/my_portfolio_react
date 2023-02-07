@@ -6,6 +6,7 @@ import react from "./../../assets/react.png";
 import redux from "./../../assets/redux.png";
 import mean from "./../../assets/mean.png";
 import qt from "./../../assets/qt.png";
+import arch from "./../../assets/architecture.png";
 import pluralsight from "./../../assets/pluralsight.png";
 
 const courseCardContentList = [
@@ -34,7 +35,15 @@ const courseCardContentList = [
 		link: "https://www.udemy.com/course/angular-2-and-nodejs-the-practical-guide/",
 	},
 	{
-		key: 3,
+		key: 4,
+		title: "Clean Architecture: Patterns, Practices, and Principles",
+		desc: "Learn a set of modern patterns, practices, and principles for creating software architecture that is flexible, testable, and maintainable.",
+		img: pluralsight,
+		langImg: arch,
+		link: "https://app.pluralsight.com/library/courses/clean-architecture-patterns-practices-principles/table-of-contents",
+	},
+	{
+		key: 5,
 		title: "React 17: Getting Started",
 		desc: "Learn the React way to build rich interactive UIs using both class and function components with React Hooks.",
 		img: pluralsight,
@@ -42,7 +51,7 @@ const courseCardContentList = [
 		link: "https://app.pluralsight.com/library/courses/react-js-getting-started/table-of-contents",
 	},
 	{
-		key: 4,
+		key: 6,
 		title: "Building Applications with React 17 and Redux",
 		desc: "Learn how to use React, Redux, React Router, and modern JavaScript to build an app with React.",
 		img: pluralsight,
@@ -50,7 +59,7 @@ const courseCardContentList = [
 		link: "https://app.pluralsight.com/library/courses/react-redux-react-router-es6/table-of-contents",
 	},
 	{
-		key: 5,
+		key: 7,
 		title: "Integrating Qt Quick 5 with C++",
 		desc: "Learn how to integrate your C++ back-end code with your beautiful QML-based Qt Quick GUI",
 		img: pluralsight,
@@ -58,7 +67,7 @@ const courseCardContentList = [
 		link: "https://app.pluralsight.com/library/courses/integrating-qt-quick-cpp/table-of-contents",
 	},
 	{
-		key: 6,
+		key: 8,
 		title: "Introduction to Qt 5.2 - A C++ Cross Platform Application Framework",
 		desc: "This course will get you up to speed quickly on the C++ Qt Framework. Be envious of Java and .NET no more",
 		img: pluralsight,
@@ -66,7 +75,7 @@ const courseCardContentList = [
 		link: "https://app.pluralsight.com/library/courses/introduction-qt-cplusplus-framework/table-of-contents",
 	},
 	{
-		key: 7,
+		key: 9,
 		title: "Qt Quick 5 Fundamentals",
 		desc: "Learn to use Qt Quick to create a modern, fluid, user interface suitable for both mobile and desktop devices",
 		img: pluralsight,
