@@ -17,6 +17,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Skills from "./components/Skills/Skills";
 import Courses from "./components/Courses/Courses";
+import Articles from "./components/Articles/Articles";
 
 function App() {
 	const [load, upadateLoad] = useState(true);
@@ -41,6 +42,7 @@ function App() {
 					<Route path="/skills" element={<Skills />} />
 					<Route path="/resume" element={<Resume />} />
 					<Route path="/courses" element={<Courses />} />
+					<Route path="/articles" element={<Articles />} />
 					<Route path="*" element={<Navigate to="/" />} />
 				</Routes>
 				<Footer />

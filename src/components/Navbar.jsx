@@ -7,8 +7,9 @@ import {
 	AiOutlineHome,
 	AiOutlineUser,
 } from "react-icons/ai";
-import { BsBook } from "react-icons/bs";
+import { BsBook} from "react-icons/bs";
 import { FaBrain } from "react-icons/fa";
+import { GrArticle } from "react-icons/gr";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -79,6 +80,16 @@ function NavBar() {
 								onClick={() => updateExpanded(false)}
 							>
 								<BsBook style={{ marginBottom: "2px" }} /> Courses
+							</Nav.Link>
+						</Nav.Item>
+
+						<Nav.Item>
+							<Nav.Link
+								as={Link}
+								to="/articles"
+								onClick={() => updateExpanded(false)}
+							>
+								<GrArticle style={{ marginBottom: "2px", fontColor:"white" }} /> Articles
 							</Nav.Link>
 						</Nav.Item>
 
