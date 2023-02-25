@@ -1,6 +1,7 @@
 import electron from "./../../assets/electron.png";
 import medium from "./../../assets/medium.png";
 import jest from "./../../assets/jest.png";
+import node from "./../../assets/node.png";
 
 const articleCardContentList = [
   {
@@ -19,6 +20,14 @@ const articleCardContentList = [
     img: medium,
     langImg: jest,
     link: "https://medium.com/@ben.dev.io/node-js-unit-testing-with-jest-b7042d7c2ad0",
+  },
+  {
+    key: 2,
+    title: "Design Patterns in Node.js",
+    desc: "Design patterns are reusable solutions to common programming problems that have been identified and documented over time by experienced programmers.",
+    img: medium,
+    langImg: node,
+    link: "https://medium.com/@ben.dev.io/design-patterns-in-node-js-227673162879",
   },
 ];
 
