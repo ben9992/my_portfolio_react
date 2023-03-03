@@ -29,6 +29,14 @@ const articleCardContentList = [
     langImg: node,
     link: "https://medium.com/@ben.dev.io/design-patterns-in-node-js-227673162879",
   },
+  {
+    key: 3,
+    title: "Node.js for Real-Time Communication",
+    desc: "In this article, we’ll explore why Node.js is the ideal choice for real-time communication and how to implement it.",
+    img: medium,
+    langImg: node,
+    link: "https://medium.com/@ben.dev.io/node-js-for-real-time-communication-cf71f985f983",
+  },
 ];
 
 export function GetArticlesDataList() {
