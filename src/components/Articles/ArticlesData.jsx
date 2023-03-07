@@ -37,6 +37,14 @@ const articleCardContentList = [
     langImg: node,
     link: "https://medium.com/@ben.dev.io/node-js-for-real-time-communication-cf71f985f983",
   },
+  {
+    key: 4,
+    title: "Clean Architecture in Node.js",
+    desc: "In this article, we will discuss Clean Architecture in Node.js, and explore how to implement it in your Node.js projects with code samples and how applying the concepts on them.",
+    img: medium,
+    langImg: node,
+    link: "https://medium.com/@ben.dev.io/clean-architecture-in-node-js-39c3358d46f3",
+  },
 ];
 
 export function GetArticlesDataList() {
