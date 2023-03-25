@@ -2,6 +2,7 @@ import electron from "./../../assets/electron.png";
 import medium from "./../../assets/medium.png";
 import jest from "./../../assets/jest.png";
 import node from "./../../assets/node.png";
+import angular_react_vue from "./../../assets/angular_react_vue.png";
 
 const articleCardContentList = [
   {
@@ -44,6 +45,15 @@ const articleCardContentList = [
     img: medium,
     langImg: node,
     link: "https://medium.com/@ben.dev.io/clean-architecture-in-node-js-39c3358d46f3",
+  },
+  {
+    key: 5,
+    title:
+      "Angular React Vue: Which Framework to Pick for Front-end Development?",
+    desc: "Three of the most popular ones are Angular, React, and Vue.js. These frameworks are highly efficient, and they have their own set of strengths and weaknesses.",
+    img: medium,
+    langImg: angular_react_vue,
+    link: "https://medium.com/@ben.dev.io/angular-react-vue-which-framework-to-pick-for-front-end-development-e7c0579fedf8",
   },
 ];
 
