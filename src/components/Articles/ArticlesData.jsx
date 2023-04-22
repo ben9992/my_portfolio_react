@@ -3,6 +3,7 @@ import medium from "./../../assets/medium.png";
 import jest from "./../../assets/jest.png";
 import node from "./../../assets/node.png";
 import angular_react_vue from "./../../assets/angular_react_vue.png";
+import kpis from "./../../assets/kpis.png";
 
 const articleCardContentList = [
   {
@@ -54,6 +55,30 @@ const articleCardContentList = [
     img: medium,
     langImg: angular_react_vue,
     link: "https://medium.com/@ben.dev.io/angular-react-vue-which-framework-to-pick-for-front-end-development-e7c0579fedf8",
+  },
+  {
+    key: 6,
+    title: "Best Practices for Building Large-Scale Node.js Applications",
+    desc: "In this article, we’ll explore some of the most common challenges and outline best practices for overcoming them.",
+    img: medium,
+    langImg: node,
+    link: "https://medium.com/@ben.dev.io/best-practices-for-building-large-scale-node-js-applications-b45ab29b757a",
+  },
+  {
+    key: 7,
+    title: "Distributed Architecture using Node.js",
+    desc: "Distributed architecture refers to the design and implementation of software systems that are composed of multiple interconnected components.",
+    img: medium,
+    langImg: node,
+    link: "https://medium.com/@ben.dev.io/distributed-architecture-using-node-js-6931d30424a9",
+  },
+  {
+    key: 8,
+    title: "KPIs For Software Development",
+    desc: "In this article, we will explore why KPIs are essential for software development, the best KPIs to track includes use cases and some MUST tools to measure them effectively.",
+    img: medium,
+    langImg: kpis,
+    link: "https://medium.com/@ben.dev.io/kpis-for-software-development-d1b52e585b5e",
   },
 ];
 
