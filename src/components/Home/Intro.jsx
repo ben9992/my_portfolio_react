@@ -36,7 +36,7 @@ function Intro() {
 							<br />
 							<br />My main languages are
 							<i>
-								<b className="lightblue"> C++, .Net & Javascript </b>
+								<b className="lightblue"> C++, .net & Javascript | Typescript </b>
 							</i>
 							<br />
 							<br />
