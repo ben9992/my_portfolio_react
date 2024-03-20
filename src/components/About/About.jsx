@@ -18,21 +18,43 @@ function About() {
 							paddingBottom: "50px",
 						}}
 					>
-						<h1 style="font-size: 2.1em; margin-bottom: 20px;">
-						    Discover My <strong>Universe</strong>
+						<h1 style={{ fontSize: "2.1em", marginBottom: "20px" }}>
+							Discover My <strong>Universe</strong>
 						</h1>
-						
-						<p style="text-align: left; font-size: 1.5em;">
-						    Greetings, I'm <span style="color: #1E90FF;">Ben Mishali</span>. Armed with a Bachelor of Science in Computer Engineering and a Master of Business Administration with a focus on technology, I navigate the tech world with enthusiasm and expertise. 👩‍🎓
-						    <br>
-						    <br>
-						    Beyond my dedication to coding, which occupies most of my time, I indulge in hobbies that fuel my creativity and passion for exploration.
-						</p>
-						
-						<ul style="font-size: 1.2em; list-style-type: none; padding: 0;">
-						    <li style="margin-bottom: 10px;">🤖 Diving into Gaming Adventures</li>
-						    <li style="margin-bottom: 10px;">✍️ Crafting Tech Insights on Blogs</li>
-						    <li>🚴🏻 Pursuing Mountain Biking & Adventurous Travels</li>
+
+						<div className="aboutText">
+							Greetings, I'm{" "}
+							<span style={{ color: "#1E90FF" }}>
+								Ben Mishali
+							</span>
+							. Armed with a Bachelor of Science in Computer
+							Engineering and a Master of Business Administration
+							with a focus on technology, I navigate the tech
+							world with enthusiasm and expertise. 👩‍🎓
+						</div>
+						<div className="aboutText">
+							Beyond my dedication to coding, which occupies most
+							of my time, I indulge in hobbies that fuel my
+							creativity and passion for exploration.
+						</div>
+
+						<ul
+							style={{
+								fontSize: "1.2em",
+								listStyleType: "none",
+								padding: 0,
+							}}
+						>
+							<li style={{ marginBottom: "10px" }}>
+								🤖 Diving into Gaming Adventures
+							</li>
+							<li style={{ marginBottom: "10px" }}>
+								✍️ Crafting Tech Insights on Blogs
+							</li>
+							<li>
+								🚴🏻 Pursuing Mountain Biking & Adventurous
+								Travels
+							</li>
 						</ul>
 					</Col>
 					<Col
@@ -40,7 +62,12 @@ function About() {
 						style={{ paddingTop: "120px", paddingBottom: "50px" }}
 						className="about-img"
 					>
-						<img style={{ padding: "30px", borderRadius: "50%" }} src={meImg} alt="about" className="img-fluid" />
+						<img
+							style={{ padding: "30px", borderRadius: "50%" }}
+							src={meImg}
+							alt="about"
+							className="img-fluid"
+						/>
 					</Col>
 				</Row>
 				<Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -53,10 +80,16 @@ function About() {
 						}}
 					>
 						<div>
-							<Transition/>
+							<Transition />
 						</div>
-						<p style={{ textAlign: "left", fontSize: "1.5em", paddingTop:"4em" }}>
-						🧠 Albert Einstein
+						<p
+							style={{
+								textAlign: "left",
+								fontSize: "1.5em",
+								paddingTop: "4em",
+							}}
+						>
+							🧠 Albert Einstein
 						</p>
 					</Col>
 				</Row>
