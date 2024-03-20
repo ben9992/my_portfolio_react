@@ -17,45 +17,21 @@ function Intro() {
 							</span> MYSELF
 						</h1>
 						<p className="home-about-body">
-							Computers has always been my passion from a young age 👶
-							<br />
-							<br />
-							I remember the first time as it was yesterday, with a glass of wine on the balcony and the first task of "Hello World" in C++.
-							<br />
-							It’s like you sit down at 8 PM, suddenly you notice that your neck hurts, your eyes are sore 😳, you blink and stretch, look at the time 🕙, and it’s 12:30 AM.
-							<br />
-							Where did the time go? 🤔
-							<br />
-							You’ve coded a whole class with test cases and it works better than you imagined it. 🤩
-							<br />
-							You feel like you really created something out of thin air, crystallized knowledge into executable form using the awesome power of your mind alone.
-							<br />
-							<br />
-							Since that day I continue to learn and explore{" "}
-							<b className="lightblue"> every day anew </b> 🕵️
-							<br />
-							<br />My main languages are
-							<i>
-								<b className="lightblue"> C++, .net & Javascript | Typescript </b>
-							</i>
-							<br />
-							<br />
-							My field of Interest's are building new &nbsp;
-							<i>
-								<b className="lightblue">Web & Native Technologies </b> and also
-								in areas related to{" "}
-								<b className="lightblue">Software architecture</b> and <b className="lightblue">Video Processing OverIP.</b>
-							</i>
-							<br />
-							<br />
-							I also apply my passion for developing products
-							with new things like
-							<i>
-								<b className="lightblue">
-									{" "}
-									Javascript Libraries and Frameworks
-								</b>
-							</i>
+						    My fascination with computers ignited early, a passion that has only grown since those first curious explorations as a child. 👶
+						    <br><br>
+						    I vividly recall the thrill of my initial encounter with programming: a serene evening, a glass of wine on the balcony, and the magical simplicity of a "Hello World" in C++. That moment when time ceased to exist, and the world narrowed to the glow of my screen. It was an evening where 8 PM blurred into the wee hours, leaving me with a sore neck, tired eyes, and a sense of wonder. 😳
+						    <br>
+						    Hours flew by unnoticed until a stretch and a glance at the clock revealed it was past midnight. In those hours, I had breathed life into a class, complete with test cases, surpassing my expectations. 🤩
+						    <br>
+						    The joy came from creating something from nothing, turning abstract thoughts into a tangible, working code through sheer mental effort.
+						    <br><br>
+						    That night set the course for a journey of continuous learning and exploration, greeting <b className="lightblue">each new day</b> with renewed curiosity. 🕵️
+						    <br><br>
+						    My expertise now spans main languages such as <i><b className="lightblue">C++, .NET, JavaScript, and TypeScript</b></i>.
+						    <br><br>
+						    I am deeply interested in developing innovative <i><b className="lightblue">Web and Native Technologies</b></i>, diving into <i><b className="lightblue">Software Architecture</b></i>, and exploring the intricacies of <i><b className="lightblue">Video Processing Over IP</b></i>.
+						    <br><br>
+						    My passion for technology also extends to experimenting with <i><b className="lightblue">JavaScript Libraries and Frameworks</b></i>, constantly seeking to incorporate new ideas into my projects.
 						</p>
 					</Col>
 					<Col md={4} className="avatarImg">
