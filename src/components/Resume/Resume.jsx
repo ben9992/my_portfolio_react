@@ -43,7 +43,8 @@ function Resume() {
           </Document>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        {/* Sticky Download Button */}
+        <Row style={{ justifyContent: "center", position: "fixed", bottom: 0, width: "100%", backgroundColor: "white", padding: "10px 0", zIndex: 1000 }}>
           <Button
             variant="primary"
             href={pdf}
