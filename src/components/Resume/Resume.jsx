@@ -25,17 +25,21 @@ function Resume() {
       <Container fluid className="resume-section">
         <Particle />
         <h1 className="courses-heading">
-          My <strong>Resume </strong>
+          My <strong>Resume</strong>
         </h1>
         <br />
-        <Row className="resume">
+        <Row className="resume d-flex flex-column align-items-center">
           <Document
             file={pdf}
             onLoadSuccess={onDocumentLoadSuccess}
-            className="d-flex justify-content-center"
+            className="d-flex flex-column justify-content-center"
           >
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-            <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
+            <div>
+              <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            </div>
+            <div style={{ marginTop: "20px" }}>
+              <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
+            </div>
           </Document>
         </Row>
 
