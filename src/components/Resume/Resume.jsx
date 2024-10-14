@@ -28,16 +28,16 @@ function Resume() {
           My <strong>Resume</strong>
         </h1>
         <br />
-        <Row className="resume d-flex flex-column align-items-center">
+        <Row className="d-flex justify-content-center">
           <Document
             file={pdf}
             onLoadSuccess={onDocumentLoadSuccess}
-            className="d-flex flex-column justify-content-center"
+            className="d-flex flex-column align-items-center"
           >
-            <div>
+            <div className="d-flex justify-content-center">
               <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
             </div>
-            <div style={{ marginTop: "20px" }}>
+            <div className="d-flex justify-content-center" style={{ marginTop: "20px" }}>
               <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
             </div>
           </Document>
