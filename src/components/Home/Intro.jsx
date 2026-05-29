@@ -51,49 +51,61 @@ function Intro() {
 							renewed curiosity. 🕵️
 						</div>
 						<div className="home-about-body">
-							My expertise now spans main languages such as{" "}
+							My expertise spans languages and frameworks including{" "}
 							<i>
 								<b className="lightblue">
-									C++, C#, JavaScript and TypeScript
+									C++, C#, JavaScript, TypeScript
 								</b>
 							</i>{" "}
-							and also frameworks like{" "}
+							and{" "}
 							<i>
 								<b className="lightblue">
-									Angular, React and more !
+									Angular, React, Node.js and .NET
 								</b>
 							</i>
 							.
 						</div>
 						<div className="home-about-body">
-							I am deeply interested in developing innovative{" "}
+							As{" "}
+							<i>
+								<b className="lightblue">VP R&D</b>
+							</i>
+							, I lead a{" "}
 							<i>
 								<b className="lightblue">
-									Web and Native Technologies
+									40-person global R&D organization
 								</b>
-							</i>
-							, diving into{" "}
+							</i>{" "}
+							across Israel and Mexico, driving{" "}
+							<i>
+								<b className="lightblue">
+									AI-driven development
+								</b>
+							</i>{" "}
+							in{" "}
+							<i>
+								<b className="lightblue">
+									public-safety & command-and-control
+								</b>
+							</i>{" "}
+							platforms.
+						</div>
+						<div className="home-about-body">
+							Deeply passionate about{" "}
 							<i>
 								<b className="lightblue">
 									Software Architecture
 								</b>
 							</i>
-							, and exploring the intricacies of{" "}
+							,{" "}
 							<i>
-								<b className="lightblue">Multimedia Over IP</b>
+								<b className="lightblue">DevOps & CI/CD</b>
+							</i>
+							, and the intricacies of{" "}
+							<i>
+								<b className="lightblue">MoIP / AVoIP</b>
 							</i>
 							.
-						</div>
-						<div className="home-about-body">
-							My passion for technology also extends to
-							experimenting with{" "}
-							<i>
-								<b className="lightblue">
-									JavaScript Libraries and Frameworks
-								</b>
-							</i>
-							, constantly seeking to incorporate new ideas into
-							my projects.
 						</div>
 					</Col>
 					<Col md={4} className="avatarImg">

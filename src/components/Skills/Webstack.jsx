@@ -10,6 +10,7 @@ import {
 	DiAngularSimple,
 	DiNpm,
 } from "react-icons/di";
+import { SiTypescript } from "react-icons/si";
 
 function Webstack() {
 	return (
@@ -32,6 +33,9 @@ function Webstack() {
 				</Col>
 				<Col xs={4} md={2} className="tech-icons">
 					<DiJavascript1 />
+				</Col>
+				<Col xs={4} md={2} className="tech-icons">
+					<SiTypescript />
 				</Col>
 				<Col xs={4} md={2} className="tech-icons">
 					<DiHtml5 />

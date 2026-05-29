@@ -27,14 +27,23 @@ function About() {
 							<span style={{ color: "#1E90FF" }}>
 								Ben Mishali
 							</span>
-							, VP R&D. Armed with a Bachelor of Science in Computer
-							Engineering and a Master of Business Administration
-							with a focus on technology, I lead R&D teams and
-							navigate the tech world with enthusiasm and expertise. 👩‍🎓
+							, VP R&D at{" "}
+							<span style={{ color: "#1E90FF" }}>
+								KabatOne
+							</span>
+							. With 9+ years of engineering experience, I lead a
+							40-person global R&D organization across Israel and
+							Mexico, driving AI-driven development in public-safety
+							and command-and-control platforms. 👩‍🎓
 						</div>
 						<div className="aboutText">
-							Beyond my dedication to coding, which occupies most
-							of my time, I indulge in hobbies that fuel my
+							Armed with a Bachelor of Science in Computer Engineering
+							and an MBA with a focus on technology, I combine
+							strategic leadership with deep hands-on technical
+							expertise — from architecture to delivery.
+						</div>
+						<div className="aboutText">
+							Beyond engineering, I indulge in hobbies that fuel my
 							creativity and passion for exploration.
 						</div>
 
