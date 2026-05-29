@@ -27,10 +27,10 @@ function About() {
 							<span style={{ color: "#1E90FF" }}>
 								Ben Mishali
 							</span>
-							. Armed with a Bachelor of Science in Computer
+							, VP R&D. Armed with a Bachelor of Science in Computer
 							Engineering and a Master of Business Administration
-							with a focus on technology, I navigate the tech
-							world with enthusiasm and expertise. 👩‍🎓
+							with a focus on technology, I lead R&D teams and
+							navigate the tech world with enthusiasm and expertise. 👩‍🎓
 						</div>
 						<div className="aboutText">
 							Beyond my dedication to coding, which occupies most
