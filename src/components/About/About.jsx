@@ -93,7 +93,7 @@ function About() {
 						</div>
 						<p
 							style={{
-								textAlign: "left",
+								textAlign: "start",
 								fontSize: "1.5em",
 								paddingTop: "4em",
 							}}

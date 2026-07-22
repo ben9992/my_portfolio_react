@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ben Mishali — CV</title>
+<style>
+  @page { size: A4; margin: 11mm 13mm; }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  :root {
+    --accent: #3730a3;
+    --ink: #0f172a;
+    --ink2: #27364b;
+    --ink3: #5b6b82;
+    --rule: #d8dee9;
+    --panel: #f4f5fa;
+  }
+
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--ink2);
+    font-size: 8.7pt;
+    line-height: 1.42;
+  }
+
+  /* ---------- header ---------- */
+  header {
+    border-bottom: 1.4pt solid var(--ink); padding-bottom: 6pt; margin-bottom: 8pt;
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 12pt;
+  }
+  /* Background-image rather than <img> so the crop can be zoomed and
+     positioned onto the face, keeping the source artwork's triangle out. */
+  .photo {
+    width: 21mm; height: 21mm; flex-shrink: 0;
+    border-radius: 50%;
+    border: .9pt solid var(--rule);
+    background-color: #fff;
+    background-image: url('src/assets/avatar.png');
+    background-size: 215%;
+    background-position: 50% 9%;
+    background-repeat: no-repeat;
+  }
+  h1 { font-size: 22pt; font-weight: 700; color: var(--ink); letter-spacing: -.02em; line-height: 1; }
+  .title { font-size: 10.5pt; font-weight: 600; color: var(--accent); margin-top: 3pt; letter-spacing: -.01em; }
+  .contact { margin-top: 5pt; font-size: 8.3pt; color: var(--ink3); }
+  .contact a { color: var(--ink3); text-decoration: none; }
+  .sep { color: var(--rule); padding: 0 5pt; }
+
+  /* ---------- sections ---------- */
+  h2 {
+    font-size: 8.2pt; font-weight: 700; color: var(--accent);
+    letter-spacing: .14em; text-transform: uppercase;
+    border-bottom: .7pt solid var(--rule);
+    padding-bottom: 2pt; margin-bottom: 5pt;
+  }
+  section { margin-bottom: 7pt; }
+  section:last-child { margin-bottom: 0; }
+
+  .profile { font-size: 8.8pt; line-height: 1.5; }
+
+  /* ---------- AI panel ---------- */
+  .panel {
+    background: var(--panel);
+    border: .7pt solid var(--rule);
+    border-left: 2.4pt solid var(--accent);
+    border-radius: 2pt;
+    padding: 6pt 8pt;
+  }
+  .panel .row + .row { margin-top: 5pt; }
+  .panel b { color: var(--ink); font-size: 8.8pt; }
+  .panel p { margin-top: 1.5pt; font-size: 8.4pt; line-height: 1.44; }
+
+  /* ---------- experience ---------- */
+  .job + .job { margin-top: 6pt; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8pt; }
+  .company { font-size: 9.6pt; font-weight: 700; color: var(--ink); }
+  .period { font-size: 8pt; font-weight: 600; color: var(--ink3); white-space: nowrap; }
+  .role { font-size: 8.5pt; font-weight: 600; color: var(--accent); margin-bottom: 2.5pt; }
+
+  ul { list-style: none; }
+  li { position: relative; padding-left: 8.5pt; margin-bottom: 1.5pt; font-size: 8.5pt; line-height: 1.44; }
+  li::before { content: "\25AA"; position: absolute; left: 0; top: -0.2pt; color: var(--accent); font-size: 6pt; }
+
+  /* ---------- skills / education ---------- */
+  .kv { display: grid; grid-template-columns: 74pt 1fr; gap: 1.5pt 8pt; font-size: 8.4pt; }
+  .kv dt { font-weight: 700; color: var(--ink); }
+  .kv dt.lead { color: var(--accent); }
+  .kv dd { color: var(--ink2); }
+
+  .edu { display: grid; grid-template-columns: 1fr 1fr; gap: 3pt 16pt; }
+  .edu .d { font-size: 8.5pt; font-weight: 700; color: var(--ink); line-height: 1.3; }
+  .edu .s { font-size: 8pt; color: var(--ink3); }
+
+  .also { font-size: 8.3pt; color: var(--ink2); }
+  .also .sep { color: var(--rule); }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Ben Mishali</h1>
+    <div class="title">VP R&amp;D &middot; AI-Driven Development</div>
+    <div class="contact">
+      <a href="tel:+972549764530">+972 54-9764530</a><span class="sep">|</span>
+      <a href="mailto:benm.dev.io@gmail.com">benm.dev.io@gmail.com</a><span class="sep">|</span>
+      <a href="https://www.linkedin.com/in/ben-mishali/">linkedin.com/in/ben-mishali</a><span class="sep">|</span>
+      <a href="https://github.com/ben9992">github.com/ben9992</a>
+    </div>
+  </div>
+  <div class="photo" role="img" aria-label="Ben Mishali"></div>
+</header>
+
+<section>
+  <p class="profile">
+    VP R&amp;D leading a 40-person global R&amp;D organization across Israel and Mexico, with 9+ years of engineering
+    experience and 30&ndash;40% hands-on. Built the Spec-Driven Development (SDD) framework that takes work from ticket
+    to reviewed PR through purpose-built agents, and rolled the agent stack out across every engineering discipline.
+    Delivers public-safety and command-and-control platforms across Desktop, Web and Mobile. BSc Computer Engineering,
+    MBA specialized in Technologies.
+  </p>
+</section>
+
+<section>
+  <h2>AI-Driven Development</h2>
+  <div class="panel">
+    <div class="row">
+      <b>SDD Framework &mdash; designed and built</b>
+      <p>
+        Delivery decomposed into staged agents: intake &rarr; spec &rarr; architecture &rarr; plan &rarr; implement
+        &rarr; test &rarr; independent review. Three human gates; everything between them runs unattended. Specs and
+        plans are versioned, reviewable artifacts rather than throwaway chat history. Isolated Git worktrees let
+        sub-agents run in parallel. Adopted across 40 engineers in two countries.
+      </p>
+    </div>
+    <div class="row">
+      <b>Agent Stack &mdash; defined and rolled out org-wide</b>
+      <p>
+        Claude Code for orchestration (cross-file refactors, migrations, clean-context code review) &middot; Cursor for
+        the in-editor loop &middot; MCP for one shared view of Jira, Confluence and the repo. Review standards hold
+        AI-authored code to the same bar as human-authored code.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-head">
+      <span class="company">KabatOne (formerly CityShob)</span>
+      <span class="period">2025 &ndash; Present</span>
+    </div>
+    <div class="role">VP R&amp;D (30&ndash;40% hands-on)</div>
+    <ul>
+      <li>Lead a 40-person global R&amp;D organization across Israel and Mexico plus outsourced teams, managing multiple team leaders and engineering disciplines.</li>
+      <li>Built the SDD framework and drove agent-stack adoption (Claude Code, Cursor, MCP) across the organization.</li>
+      <li>Own technical strategy and delivery for public-safety and command-and-control systems &mdash; Desktop, Web and Mobile.</li>
+      <li>Own the R&amp;D roadmap, architecture and quarterly planning; manage cross-border budgets, hiring, capacity planning and KPI frameworks.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <span class="company">Fibernet Ltd</span>
+      <span class="period">2022 &ndash; 2025</span>
+    </div>
+    <div class="role">Software Team Leader (70% hands-on) &middot; Senior Software Engineer</div>
+    <ul>
+      <li>Led a team of 5 engineers using Agile, designing and building enterprise software across multiple platforms.</li>
+      <li>Delivered MEAN-stack web applications on Linux and Windows; MoIP/AVoIP protocols and third-party room-control integrations.</li>
+      <li>Built and maintained CI/CD infrastructure for faster, more reliable software delivery.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <span class="company">Elbit Systems</span>
+      <span class="period">2017 &ndash; 2022</span>
+    </div>
+    <div class="role">Software Engineer</div>
+    <ul>
+      <li>Developed real-time C++ applications and Qt UI (QML + C++), improving system response times and performance.</li>
+      <li>Managed a team of engineers from the IDF, coordinating deliverables and the integration of new technologies.</li>
+      <li>Built and optimized DevOps infrastructure &mdash; Jenkins, JFrog Artifactory, Azure DevOps, GitLab CI; RabbitMQ and Cassandra for data handling.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <dl class="kv">
+    <dt class="lead">AI-Driven Dev</dt><dd>Spec-Driven Development (SDD) &middot; agentic workflows &middot; multi-agent orchestration &middot; Claude Code &middot; Cursor &middot; MCP &middot; agent specs &amp; skill libraries &middot; AI code review standards</dd>
+    <dt>Languages</dt><dd>TypeScript &middot; JavaScript &middot; C++ &middot; C# &middot; Python &middot; Groovy</dd>
+    <dt>Frameworks</dt><dd>Angular &middot; React &middot; Node.js &middot; .NET &middot; Qt/QML</dd>
+    <dt>DevOps &amp; CI/CD</dt><dd>Kubernetes &middot; Docker &middot; ArgoCD &middot; Rancher &middot; Jenkins &middot; GitLab CI &middot; Azure DevOps &middot; JFrog Artifactory</dd>
+    <dt>Data</dt><dd>MongoDB &middot; SQL Server &middot; Elasticsearch / ELK &middot; RabbitMQ &middot; Cassandra &middot; REST APIs</dd>
+    <dt>Domain</dt><dd>MoIP / AVoIP &middot; video streaming &amp; coding &middot; real-time systems &middot; command &amp; control</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="edu">
+    <div>
+      <div class="d">MBA, Specialization in Technologies</div>
+      <div class="s">Ruppin Academic Center &middot; 2020&ndash;2021</div>
+    </div>
+    <div>
+      <div class="d">BSc Computer Engineering</div>
+      <div class="s">Ruppin Academic Center &middot; 2016&ndash;2020</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Also</h2>
+  <div class="also">
+    Management Course, Fibernet Ltd (2024)<span class="sep">|</span>
+    Mentor &mdash; Magshimim, Cyber Education Center (2017&ndash;2019)<span class="sep">|</span>
+    9 published technical articles on Medium<span class="sep">|</span>
+    IDF Engineering Corps &mdash; Staff Sergeant (2011&ndash;2014)
+  </div>
+</section>
+
+</body>
+</html>

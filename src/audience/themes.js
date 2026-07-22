@@ -1,0 +1,130 @@
+/**
+ * Three audiences, three treatments.
+ *
+ * Themes are applied as CSS custom properties on :root, so switching audience
+ * re-themes every component without threading props through eleven files.
+ * The token ladder is identical in each theme — only the values flip.
+ */
+
+export const AUDIENCES = {
+  hr: {
+    id: "hr",
+    label: "Recruiter / HR",
+    blurb: "Light and scannable. Keywords, not paragraphs.",
+  },
+  tech: {
+    id: "tech",
+    label: "Engineer",
+    blurb: "Dark and deep. The architecture, with the reasoning intact.",
+  },
+  exec: {
+    id: "exec",
+    label: "Executive / Founder",
+    blurb: "Outcomes, scale and what it costs to run an org this size.",
+  },
+};
+
+export const THEMES = {
+  hr: {
+    scheme: "light",
+    "--bg": "#ffffff",
+    "--bg-alt": "#f5f6fb",
+    "--text": "#0f172a",
+    "--text-2": "#1e293b",
+    "--text-3": "#475569",
+    "--muted": "#5f6d82",
+    "--muted-2": "#6d7b91",
+    "--muted-3": "#97a3b4",
+    "--muted-4": "#cbd5e1",
+    "--surface": "rgba(15,23,42,0.028)",
+    "--surface-2": "rgba(15,23,42,0.055)",
+    "--surface-3": "rgba(15,23,42,0.04)",
+    "--border": "rgba(15,23,42,0.10)",
+    "--border-2": "rgba(15,23,42,0.12)",
+    "--border-3": "rgba(15,23,42,0.17)",
+    "--accent": "#4f46e5",
+    "--accent-2": "#4338ca",
+    "--accent-3": "#7c3aed",
+    "--accent-soft": "rgba(79,70,229,0.07)",
+    "--accent-mid": "rgba(79,70,229,0.13)",
+    "--accent-strong": "rgba(79,70,229,0.26)",
+    "--accent-glow": "rgba(79,70,229,0.18)",
+    "--on-accent": "#ffffff",
+    "--nav-bg": "rgba(255,255,255,0.9)",
+    "--grid": "rgba(79,70,229,0.06)",
+    "--halo": "rgba(79,70,229,0.10)",
+    "--photo-bg": "#ffffff",
+    "--card": "#ffffff",
+  },
+  tech: {
+    scheme: "dark",
+    "--bg": "#0a0a0f",
+    "--bg-alt": "#0d0d18",
+    "--text": "#f8fafc",
+    "--text-2": "#e2e8f0",
+    "--text-3": "#a9b4c4",
+    "--muted": "#8b97a9",
+    "--muted-2": "#78849a",
+    "--muted-3": "#5c6a80",
+    "--muted-4": "#39465b",
+    "--surface": "rgba(255,255,255,0.02)",
+    "--surface-2": "rgba(255,255,255,0.04)",
+    "--surface-3": "rgba(255,255,255,0.03)",
+    "--border": "rgba(255,255,255,0.06)",
+    "--border-2": "rgba(255,255,255,0.07)",
+    "--border-3": "rgba(255,255,255,0.10)",
+    "--accent": "#6366f1",
+    "--accent-2": "#818cf8",
+    "--accent-3": "#a78bfa",
+    "--accent-soft": "rgba(99,102,241,0.08)",
+    "--accent-mid": "rgba(99,102,241,0.12)",
+    "--accent-strong": "rgba(99,102,241,0.2)",
+    "--accent-glow": "rgba(99,102,241,0.4)",
+    "--on-accent": "#ffffff",
+    "--nav-bg": "rgba(10,10,15,0.85)",
+    "--grid": "rgba(99,102,241,0.06)",
+    "--halo": "rgba(99,102,241,0.15)",
+    "--photo-bg": "#ffffff",
+    "--card": "#0f0f1a",
+  },
+  exec: {
+    scheme: "dark",
+    "--bg": "#0b1120",
+    "--bg-alt": "#111a2e",
+    "--text": "#f8fafc",
+    "--text-2": "#e8eef7",
+    "--text-3": "#a3b1c6",
+    "--muted": "#94a2b8",
+    "--muted-2": "#74839b",
+    "--muted-3": "#56657c",
+    "--muted-4": "#2a3548",
+    "--surface": "rgba(255,255,255,0.028)",
+    "--surface-2": "rgba(255,255,255,0.055)",
+    "--surface-3": "rgba(255,255,255,0.04)",
+    "--border": "rgba(255,255,255,0.08)",
+    "--border-2": "rgba(255,255,255,0.10)",
+    "--border-3": "rgba(255,255,255,0.14)",
+    "--accent": "#f0a92c",
+    "--accent-2": "#fbbf24",
+    "--accent-3": "#fcd34d",
+    "--accent-soft": "rgba(240,169,44,0.09)",
+    "--accent-mid": "rgba(240,169,44,0.15)",
+    "--accent-strong": "rgba(240,169,44,0.28)",
+    "--accent-glow": "rgba(240,169,44,0.35)",
+    "--on-accent": "#1a1205",
+    "--nav-bg": "rgba(11,17,32,0.88)",
+    "--grid": "rgba(240,169,44,0.05)",
+    "--halo": "rgba(240,169,44,0.10)",
+    "--photo-bg": "#ffffff",
+    "--card": "#111a2e",
+  },
+};
+
+/** Which sections each audience sees. Order follows the page. */
+export const VISIBLE = {
+  hr:   { about: 1, metrics: 1, projects: 0, agentStack: 0, experience: 1, skills: 1, articles: 1, contact: 1 },
+  tech: { about: 1, metrics: 1, projects: 1, agentStack: 1, experience: 1, skills: 1, articles: 1, contact: 1 },
+  exec: { about: 1, metrics: 1, projects: 1, agentStack: 1, experience: 1, skills: 0, articles: 1, contact: 1 },
+};
+
+export const DEFAULT_AUDIENCE = "tech";
