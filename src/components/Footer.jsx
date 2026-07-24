@@ -6,7 +6,7 @@ import { useLang } from "../i18n/LanguageContext";
 const LINKS = [
   { icon: <SiLinkedin size={16} />, href: "https://www.linkedin.com/in/ben-mishali/", label: "LinkedIn" },
   { icon: <SiGithub size={16} />, href: "https://github.com/ben9992", label: "GitHub" },
-  { icon: <SiMedium size={16} />, href: "https://medium.com/@benmishali", label: "Medium" },
+  { icon: <SiMedium size={16} />, href: "https://medium.com/@ben.dev.io", label: "Medium" },
   { icon: <FiMail size={16} />, href: "mailto:benm.dev.io@gmail.com", label: "Email" },
 ];
 
